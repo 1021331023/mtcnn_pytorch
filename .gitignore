@@ -2,3 +2,17 @@
 results/
 *.pyc
 .vscode/
+data/
+annotations/imglist_anno_12.txt
+annotations/imglist_anno_24.txt
+annotations/imglist_anno_48-0.txt
+annotations/landmark_48.txt
+annotations/neg_12.txt
+annotations/neg_24.txt
+annotations/neg_48.txt
+annotations/part_12.txt
+annotations/part_24.txt
+annotations/part_48.txt
+annotations/pos_12.txt
+annotations/pos_24.txt
+annotations/pos_48.txt

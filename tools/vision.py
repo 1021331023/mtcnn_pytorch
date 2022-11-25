@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib as plt
 
 
 def vis_face(im_array, dets, landmarks=None):

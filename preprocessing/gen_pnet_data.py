@@ -49,7 +49,7 @@ def gen_pnet_data(data_dir, anno_file, prefix):
     for annotation in annotations:
         annotation = annotation.strip().split(' ')
         im_path = os.path.join(prefix, annotation[0])  # image_path
-#         print(im_path)
+        # print(im_path)
         bbox = list(map(float, annotation[1:]))  # map()函数是将func作用于seq中的每一个元素，并将所有的调用的结果作为一个list返回
         boxes = np.array(bbox, dtype=np.int32).reshape(-1, 4)  # N*4 dim array
         img = cv2.imread(im_path)
@@ -173,7 +173,7 @@ def parse_args():
     parser.add_argument('--anno_file', dest='annotation_file', help='wider face original annotation file',
                         default=os.path.join(config.ANNO_STORE_DIR, "wider_origin_anno.txt"), type=str)
     parser.add_argument('--prefix_path', dest='prefix_path', help='annotation file image prefix root path',
-                        default='/home/dataset/WIDER/WIDER_train/images', type=str)
+                        default='data/WIDER/WIDER_train/images', type=str)
 
     args = parser.parse_args()
     return args

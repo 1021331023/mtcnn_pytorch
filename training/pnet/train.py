@@ -19,7 +19,7 @@ if not os.path.exists(config.save_path):
     os.makedirs(config.save_path)
 
 # Set device
-os.environ['CUDA_VISIBLE_DEVICES'] = config.GPU
+# os.environ['CUDA_VISIBLE_DEVICES'] = config.GPU
 use_cuda = config.use_cuda and torch.cuda.is_available()
 torch.manual_seed(config.manualSeed)
 torch.cuda.manual_seed(config.manualSeed)

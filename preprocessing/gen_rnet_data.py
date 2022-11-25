@@ -18,9 +18,9 @@ from tools.image_reader import TestImageLoader
 from tools.utils import IoU, convert_to_square
 
 os.environ['CUDA_DEVICE_ORDER'] = "PCI_BUS_ID"
-os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+# os.environ['CUDA_VISIBLE_DEVICES'] = "0"
 
-
+   
 def gen_rnet_data(data_dir, anno_file, pnet_model_file, prefix_path='', use_cuda=True, vis=False):
     # load the pnet and pnet_detector
 
@@ -195,7 +195,7 @@ def parse_args():
     parser.add_argument('--gpu', dest='use_cuda', help='with gpu',
                         default=config.USE_CUDA, type=bool)
     parser.add_argument('--prefix_path', dest='prefix_path', help='annotation file image prefix root path',
-                        default='/home/dataset/WIDER/WIDER_train/images', type=str)
+                        default='data/WIDER/WIDER_train/images', type=str)
 
     args = parser.parse_args()
     return args

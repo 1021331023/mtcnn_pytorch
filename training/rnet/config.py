@@ -10,7 +10,7 @@ class Config(object):
         self.GPU = "1"  # default gpu to use
 
         # ------------- Data options -------------------------------------------
-        self.nThreads = 8  # number of data loader threads
+        self.nThreads = 16  # number of data loader threads
 
         # ---------- Optimization options --------------------------------------
         self.nEpochs = 50  # number of total epochs to train 400
